@@ -29,7 +29,7 @@ con.connect(function (err){
     ['Chuck', 'Main Road 989'],
     ['Viola', 'Sideway 1633']
   ];
-  //<query> 
+  //<query> Use SQL statements to read from (or write to) a MySQL database. This is also called "to query" the database.
   con.query(sql, [values], function(err, result) {
   	if (err) throw err;
   	console.log("Number of records inserted: " + result.affectedRows);
